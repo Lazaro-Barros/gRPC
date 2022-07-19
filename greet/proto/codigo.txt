@@ -1,0 +1,5 @@
+compilar protofile:
+
+protoc -Igreet/proto --go_out=./greet/proto --go_opt=module=github.com/Lazaro-Barros/gRPC --go-grpc_out=./greet/proto --go-grpc_opt=module=github.com/Lazaro-Barros/gRPC greet/proto/greet.proto
+protoc -Igreet/proto --go_out=. --go_opt=module={nome_do_seu_modulo_go} --go-grpc_out=. --go-grpc_opt=module={nome_do_seu_modulo_go} {caminho_e_arquivo_proto_para_compilar}
+    
